@@ -183,7 +183,7 @@ def cracker(uid,pwx,tl):
 				"dnt": "1",
 				"content-type": "application/x-www-form-urlencoded",
 				"user-agent": str(random.choice([f"Mozilla/5.0 (Linux; Android {str(random.randint(4,9))}; SM-J{str(random.randint(199,599))}F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(random.randint(80,107))}.0.{str(random.randint(1999,4999))}.0 Mobile Safari/537.36"])),
-			    "accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+			    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
 				"sec-fetch-site": "same-origin",
 				"sec-fetch-mode": "no-cores",
 				"sec-fetch-user": "?1",
