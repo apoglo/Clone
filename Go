@@ -152,7 +152,7 @@ def cracker(uid,pwx,tl):
 				"dnt": "1","upgrade-insecure-requests": "1",
 				"user-agent": str(random.choice([f"Mozilla/5.0 (Linux; Android {str(random.randint(4,9))}; SM-J{str(random.randint(199,599))}F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(random.randint(80,107))}.0.{str(random.randint(1999,4999))}.0 Mobile Safari/537.36"])),
 				"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-			    "sec-fetch-site': 'same-origin",
+			        "sec-fetch-site": "same-origin",
 				"sec-fetch-mode": "navigate",
 				"sec-fetch-user": "?1",
 				"sec-fetch-dest": "document",
